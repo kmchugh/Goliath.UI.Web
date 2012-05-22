@@ -1,3 +1,6 @@
 [submodule "resources/inc/javascript/dromos"]
 	path = resources/inc/javascript/dromos
 	url = git@github.com:kmchugh/dromos.git
+[submodule "resources/themes/effort.less"]
+	path = resources/themes/effort.less
+	url = git@github.com:kmchugh/effort.less.git
