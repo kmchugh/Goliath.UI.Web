@@ -1,0 +1,3 @@
+[submodule "resources/inc/javascript/dromos"]
+	path = resources/inc/javascript/dromos
+	url = git@github.com:kmchugh/dromos.git
