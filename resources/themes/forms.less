@@ -1,0 +1,57 @@
+@import "./effort.less";
+@import "./core.less";
+
+form
+{
+    text-align: right;
+    fieldset
+    {
+        text-align: left;
+        margin: .5em 0 0 0;
+        padding: .5em;
+        #effortless > #border .rounded(1px, solid, black, 6px);
+        legend
+        {
+            #effortless > #background .rounded(6px);
+            font-weight: bold;
+            padding: .15em .5em .15em .5em;
+        }
+
+        .formField
+        {
+            margin: 0 0 .25em 0;
+            display: block;
+            label
+            {
+                display: inline-block;
+                #effortless > #dimension .min-width(150px);
+            }
+
+            input, select
+            {
+                display: inline-block;
+                #effortless > #dimension .min-width(220px);
+            }
+        }
+    }
+    
+    *:first-child+html button[type]
+    {
+        padding:4px 10px 3px 7px; /* IE7 */
+    }
+
+    .imageButton 
+    {
+        padding-left: .25em; 
+        .image
+        {
+            display: inline-block;
+            margin:0 5px 3px .25em !important;
+            padding:0;
+            border:none;
+            width:16px;
+            height:16px;
+            vertical-align: bottom;
+        }
+    }
+}

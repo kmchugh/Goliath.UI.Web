@@ -1,0 +1,35 @@
+// Ensures the panel looks decent
+.identityPanel
+{
+    vertical-align: top;
+
+    .tabControl
+    {
+        width: 500px;
+
+        > .tabs
+        {
+            height: 16em;
+
+            > .tabPanel
+            {
+                height: 20em;
+            }
+        }
+    }
+}
+
+// Make sure the navlinks have a gap
+.navLinks
+{
+    display: inline-block;
+    margin: .25em .5em .25em 0;
+}
+
+
+// Hides the options based on authorisation.  If not authenticated then the class
+// will be .isNotAuthenticatedtrue, if authenticated then the class would be .isAuthenticatedtrue
+.isNotAuthenticated, .isAuthenticated
+{
+    display: none;
+}

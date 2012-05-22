@@ -1,0 +1,36 @@
+@import "./effort.less";
+
+.tabControl
+{
+    > .tabList
+    {  
+        letter-spacing: -4px;
+        padding: 0;
+        margin: 0;
+ 
+        display: block;
+
+        > li
+        {
+            letter-spacing: 0;
+            display: inline-block;
+            list-style: none;
+
+            a
+            {
+                display: block;
+            }
+
+            a.selected
+            {
+                font-weight: bold;
+            }
+        }
+    }
+
+    > .tabs
+    {
+        overflow: auto;
+        display: block;
+    }
+}
