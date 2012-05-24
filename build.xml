@@ -14,15 +14,4 @@
     <!-- Import the local properties file -->
     <property file="${user.home}/builds/${ant.project.name}.properties"/>
     
-    <property name="goliath.davidJS.root" value="../../../../JavaScript/DavidJS/"/>
-    
-    <!-- On post compile, copy resources from various projects to the distribution resources subdirectories -->
-    <target name="-post-compile">
-        
-        <!-- Copy in all of the DavidJS scripts -->
-        <copy todir="${dist.dir}/resources/inc/javascript" overwrite="true">
-            <fileset dir="${goliath.davidJS.root}"/>
-        </copy>
-        
-    </target>
 </project>
