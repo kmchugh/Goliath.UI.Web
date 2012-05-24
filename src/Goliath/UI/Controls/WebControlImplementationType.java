@@ -38,10 +38,10 @@ public class WebControlImplementationType extends ControlImplementationType
      * @param tcValue The value for the event type
      * @throws Goliath.Exceptions.InvalidParameterException
      */
-    private WebControlImplementationType()
+    protected WebControlImplementationType(String tcValue)
         throws Goliath.Exceptions.InvalidParameterException
     {
-        super("HTML");
+        super(tcValue);
     }
 
     private static WebControlImplementationType g_oHTML;
@@ -51,7 +51,7 @@ public class WebControlImplementationType extends ControlImplementationType
         {
             try
             {
-                g_oHTML = new WebControlImplementationType();
+                g_oHTML = new WebControlImplementationType("HTML");
             }
             catch (Goliath.Exceptions.InvalidParameterException ex)
             {}
